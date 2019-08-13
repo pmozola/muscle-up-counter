@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUCounter", "MUCounter\MUCounter.csproj", "{54C85A46-E803-40C1-B3C6-AE6975B30E7E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUCNotification", "MUCNotification\MUCNotification.csproj", "{F3278002-AFD8-4FE7-A95F-1963BF1ACD3D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUCMessages", "MUCMessages\MUCMessages.csproj", "{90D09901-F9BF-44B3-8197-DAD2F329C378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUCMessages", "MUCMessages\MUCMessages.csproj", "{90D09901-F9BF-44B3-8197-DAD2F329C378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{54C85A46-E803-40C1-B3C6-AE6975B30E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C85A46-E803-40C1-B3C6-AE6975B30E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C85A46-E803-40C1-B3C6-AE6975B30E7E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3278002-AFD8-4FE7-A95F-1963BF1ACD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3278002-AFD8-4FE7-A95F-1963BF1ACD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3278002-AFD8-4FE7-A95F-1963BF1ACD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3278002-AFD8-4FE7-A95F-1963BF1ACD3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90D09901-F9BF-44B3-8197-DAD2F329C378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90D09901-F9BF-44B3-8197-DAD2F329C378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D09901-F9BF-44B3-8197-DAD2F329C378}.Release|Any CPU.ActiveCfg = Release|Any CPU
