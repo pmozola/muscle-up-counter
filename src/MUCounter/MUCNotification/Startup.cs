@@ -55,6 +55,8 @@ namespace MUCNotification
             services.AddSingleton<IHostedService, BusService>();
             services.AddSingleton<IMongoClient>(new MongoClient(this.Configuration.GetValue<string>("mongoConnectionString")));
             services.AddTransient<DailyRepsCounterRepository>();
+            services.AddTransient<IRaportService, RaportService>();
+            services.AddTransient<SmsService>();
 
             var migrationOptions = new MongoMigrationOptions
             {
@@ -84,9 +86,8 @@ namespace MUCNotification
 
             app.UseMvc();
             app.UseHangfireDashboard();
-
             RecurringJob
-                .AddOrUpdate(() => this.serviceProvider.GetService<IRaportService>().Raport(), Cron.Daily(21, 45), TimeZoneInfo.Local);
+                .AddOrUpdate(() => app.ApplicationServices.GetService<IRaportService>().Raport(), Cron.Daily(21, 45), TimeZoneInfo.Local);
         }
     }
 }
